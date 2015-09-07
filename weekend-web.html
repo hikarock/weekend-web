@@ -5,6 +5,13 @@
 
 <body>
   <div id="weekend">
-    <h1><img src="/images/logo.png" alt="logo"></h1>
+    {{> logo}}
   </div>
 </body>
+
+<template name="logo">
+  <h1>
+    <img id="logo" src="/images/logo.png" alt="logo">
+    <span id="count">{{count}}</span>
+  </h1>
+</template>
